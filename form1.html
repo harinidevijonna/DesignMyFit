@@ -1,0 +1,118 @@
+
+        <html>
+        
+        <head>
+            <meta charset="UTF-8">
+            <title>Responsive Registaration Form</title>
+            <link rel="stylesheet" href="formstyle.css">
+        </head>
+        
+        <body>
+            <h1>Body Measurments</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="mobile">Mobile:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="gender" required>Gender:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="radio" id="male" name="gender" value="male" />Male
+                        <input type="radio" id="female" name="gender" value="female" />Female
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10"></div>
+                    <label for="neckshape">Neck Shape:</label>
+                    <select id="neckshape" name="neckshape" required>
+                        <option value="round neck">Round Neck</option>
+                        <option value="v neck">V Neck</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                    <label for="chest">Chest Size:</label>
+                    </div>
+                    <div class="col-90">
+                    <input type="text" id="chest" name="chest" required>
+                
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                    <label for="shoulder">Shoulder Size:</label>
+                    </div>
+                    <div class="col-90">
+                    <input type="text" id="shoulder" name="shoulder" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                    <label for="arm">Arm Size:</label>
+                    </div>
+                    <div class="col-90">
+                    <input type="text" id="arm" name="arm" required>
+                    </div>
+                </div>
+              
+                
+                <div class="row">
+                    <div class="col-10">
+                    <label for="hip">Hip Size:</label>
+                    </div>
+                    <div class="col-90">
+                    <input type="text" id="hip" name="hip" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                    <label for="bust">weist Size:</label>
+                    </div>
+                    <div class="col-90">
+                    <input type="text" id="bust" name="bust" required>
+                    </div>
+                </div>
+                <div>
+                <button onclick="submitForm()">Submit</button>
+                
+                <script>
+                    function submitForm() {
+                        window.open("submit.html", "_blank");
+                        alert("Submitted Successfully!");
+                    }
+                </script>
+                </div>
+            </div>
+        </body>
+    </html>

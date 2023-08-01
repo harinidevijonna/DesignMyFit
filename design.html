@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Side-by-Side Images</title>
+
+
+    <link rel="stylesheet" href="backgroundstyle.css">
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Models</h1>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/d1.jpg" alt="Image 1" width="210" height="150" id="image1">
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/d2.jpeg" alt="Image 2" width="210" height="150" id="image2">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/d3.jpg" alt="Image 3" width="210" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/d4.jpg" alt="Image 4" width="210" height="150" id="image4">
+    </div>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/d5.jpg" alt="Image 1" width="230" height="150" id="image1">
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/d6.jpeg" alt="Image 2" width="230" height="150" id="image2">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/d7.jpeg" alt="Image 3" width="210" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/d8.jpeg" alt="Image 4" width="210" height="150" id="image4">
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/d9.jpg" alt="Image 2" width="210" height="150" id="image2">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/d10.jpg" alt="Image 3" width="210" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/d11.jpeg" alt="Image 4" width="230" height="150" id="image4">
+    </div>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/d12.jpeg" alt="Image 1" width="230" height="150" id="image1">
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/d13.jpeg" alt="Image 2" width="210" height="150" id="image2">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/d1.jpg" alt="Image 3" width="210" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/d2.jpeg" alt="Image 4" width="210" height="150" id="image4">
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/d3.jpg" alt="Image 2" width="210" height="150" id="image2">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/d4.jpg" alt="Image 3" width="230" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/d5.jpg" alt="Image 4" width="230" height="150" id="image4">
+    </div>
+    <div class="image-container" onclick="selectImage('image1')">
+        <img src="../pic/t3.jpeg" alt="Image 1" width="210" height="150" id="image1">
+    </div>
+    <div class="image-container" onclick="selectImage('image2')">
+        <img src="../pic/t4.jpg" alt="Image 2" width="210" height="150" id="image2">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/t5.jpeg" alt="Image 3" width="210" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/t6.jpg" alt="Image 4" width="210" height="150" id="image4">
+    </div>
+    <div class="image-container" onclick="selectImage('image3')">
+        <img src="../pic/t7.jpg" alt="Image 3" width="230" height="150" id="image3">
+    </div>
+    <div class="image-container" onclick="selectImage('image4')">
+        <img src="../pic/t8.png" alt="Image 4" width="230" height="150" id="image4">
+    </div>
+    <script>
+        function selectImage(imageId) {
+            const images = document.querySelectorAll('.image-container img');
+            images.forEach((image) => {
+                if (image.id === imageId) {
+                    image.classList.toggle('selected');
+                } else {
+                    image.classList.remove('selected');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

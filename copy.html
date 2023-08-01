@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Nunito&family=Palanquin+Dark:wght@500&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainbaground.css">
+    <title>Nike Store</title>
+
+    <style>
+        /* CSS code to style the buttons and position them side by side */
+        .image-container {
+            position: relative;
+            /* Set the container as a reference for absolute positioning */
+            display: inline-block;
+            /* Display the container inline with the text */
+        }
+
+        /* Style for the image */
+        .image-container img {
+            max-width: 100%;
+            /* To ensure the image doesn't exceed its container */
+            display: block;
+            /* Remove any extra spacing or gaps */
+        }
+.large-text {
+            font-size: 3em; /* Change the value to adjust the size */
+            font-weight: bold;
+            color: #ff6600; /* Change the color to your preference */
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow for a stylish effect */
+            letter-spacing: 2px; /* Adjust the letter spacing for better readability */
+        }
+        /* Style for the text overlay */
+        .image-text {
+            position: absolute;
+            top: 50%;
+            /* Adjust this value to vertically center the text */
+            left: 50%;
+            /* Adjust this value to horizontally center the text */
+            transform: translate(-50%, -50%);
+            /* Center the text precisely */
+            color: white;
+            /* Set the text color */
+            font-size: 24px;
+            /* Set the font size */
+            font-weight: bold;
+            /* Set the font weight */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Add a text shadow for better visibility */
+        }
+        .button-container {
+            display: flex;
+            /* Using 'flex' to create a flexible container */
+        }
+        .large-text {
+            font-size: 3em; /* Change the value to adjust the size */
+            font-weight: bold;
+            color: #ff6600; /* Change the color to your preference */
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow for a stylish effect */
+            letter-spacing: 2px; /* Adjust the letter spacing for better readability */
+        }
+        .button {
+            margin: 5px;
+            /* Add some space between the buttons */
+            padding: 10px 20px;
+            /* Add padding to make the buttons look nicer */
+            background-color: #3498db;
+            /* Set the background color of the buttons */
+            color: white;
+            /* Set the text color to white */
+            border: none;
+            /* Remove the default button border */
+            border-radius: 5px;
+            /* Add rounded corners to the buttons */
+            cursor: pointer;
+            /* Change the cursor to a hand when hovering over the buttons */
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <h2>DesignMyFit</h2>
+                <!-- <img decoding="async" src="./img/sneakers.png" alt=""> -->
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img decoding="async" loading="lazy" src="./img/search.png" width="20" height="20" alt=""
+                        class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+            
+            <button onclick="openTailorPage()">Tailors</button>
+            <button onclick="openFabricPage()">Fabric</button>
+            <button onclick="openDesignPage()">Design</button>
+            <button onclick="openMeasurementsPage()">Measurements</button>
+            
+            <script>
+                function openTailorPage() {
+                     window.open("tailor.html", "_blank");
+                }
+
+                function openFabricPage() {
+                    window.open("fabric.html", "_blank");
+                }
+
+                function openDesignPage() {
+                     window.open("design.html", "_blank");
+                }
+
+                function openMeasurementsPage() {
+                     window.open("form1.html", "_blank")
+                }
+            </script>
+            </div>
+            </div>
+            </nav>
+            <div>
+                
+                <div class="image-container">
+                    <img src="../pic/s2.jpg" height="800" width="1500" alt="Image">
+                    <div  class="image-text">DesignMyFit</div>
+                    
+                </div>
+                
+            </div>
+</body>
+</html>
